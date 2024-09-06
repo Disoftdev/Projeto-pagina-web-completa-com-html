@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Centro Estético Europeu</title>
+    <style>
+        :root {
+            --primary-color: #ef10c2;
+            --secondary-color: #6358f0;
+            --menu-bg-color: #f0f0f0;
+            --content-bg-color: #ffffff;
+            --footer-bg-color: #b907b9;
+            --text-color: #333;
+            --padding-default: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eac2de;
+            color: var(--text-color);
+        }
+
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav.menu {
+            width: 20%;
+            background-color: var(--menu-bg-color);
+            padding: var(--padding-default);
+        }
+
+        nav.menu ul {
+            list-style-type: none;
+        }
+
+        nav.menu ul li {
+            margin-bottom: 20px;
+        }
+
+        nav.menu ul li a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .main {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            padding: var(--padding-default);
+        }
+
+        header.header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: var(--padding-default);
+            min-height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main.content {
+            background-color: var(--content-bg-color);
+            padding: var(--padding-default);
+            margin-bottom: var(--padding-default);
+            min-height: 300px;
+            text-align: center;
+        }
+
+        main.content img {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer.footer {
+            background-color: var(--footer-bg-color);
+            color: white;
+            text-align: center;
+            padding: var(--padding-default);
+            min-height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+            }
+
+            nav.menu, .main {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="menu">
+            <!-- Menu de navegação -->
+            <ul>
+                <li><a href="http://127.0.0.1:5500/Projeto%20de%20site%20Completo/centro-estetico-europeu.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/Sobre-N%C3%B3s%20copy.html">Sobre Nós</a></li>
+                <li><a href="http://127.0.0.1:5500/horario-de-atendimento.html">Horários de Atendimento</a></li>
+                <li><a href="http://127.0.0.1:5500/Contato.html">Contato</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="main">
+            <header class="header">
+                <body>
+                    <img src="../imagem logo header/lainneesteticacapa1.webp" width="700">   
+                    <h1>Centro Estético Europeu</h1>
+                </body>
+            </header>
+            
+            <main class="content">
+                <h2>Bem-vindo à nossa clínica! Aqui você encontrará as melhores especialistas no que diz respeito à estética corporal.</h2><br>
+                <p>O centro de estética feminino, fundado em 2020 na Europa, oferece serviços de beleza e bem-estar em um ambiente moderno e acolhedor. Focado em tratamentos personalizados, o espaço combina técnicas avançadas com produtos de alta qualidade para proporcionar cuidados completos com a pele, corpo e cabelo. Desde o início, o centro se destaca por seu atendimento exclusivo, garantindo uma experiência de relaxamento e renovação para suas clientes. Além disso, a equipe é formada por profissionais altamente qualificados que acompanham as últimas tendências em estética e saúde.</p>
+                 <img src="../imagem logo header/14a99d8c0273c6574460c5189237bd5b.jpg" width="800" height="1">
+            </main>
+    
+            <footer class="footer">
+                <!-- Rodapé -->
+                &copy; 2024 Centro Estético Europeu. Todos os direitos reservados.
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
